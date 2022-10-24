@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins&family=Roboto+Slab:wght@500&display=swap');
+    
+    #PC{width: 100%; border-collapse: collapse;}
+    
+    body{margin: 0px 0px;  color: white;
+         font-family: 'Poppins', sans-serif;
+         background-color: rgb(13, 13, 32);}
+    
+    #menu td{width:33%; text-align: center; font-family: 'Roboto Slab', serif;
+        background-color: rgb(23, 23, 42); padding:7px 7px;
+        border-left: 1px solid rgb(43, 43, 62);
+        border-right: 1px solid rgb(43, 43, 62);
+        cursor: pointer; color: white;}
+    
+    .PCcontent {display: none; margin: 7px 17px;}
+    a{color: orange;}
+    .PhoneMenu{text-align: center; background-color: rgb(23, 23, 42); 
+        font-family: 'Roboto Slab', serif; color:white; font-size: 0.75em;
+         padding-top: 0.5em;padding-bottom: 0.5em;}
+    .PhoneContent{display: none; margin: 7px 17px;} 
+    #Phone{width: 100%; border-collapse: collapse;}
+    
+    .head {background-color: goldenrod;}
+    .head td{padding-left: 1em; padding-top: 5px; background-color: goldenrod;}
+
+    #top{padding-left: 0.75em; padding-top: 5px; margin: 0px 0px;}
+    
+    span{font-weight: bold; text-decoration: underline;}
+  
+    .PCLogo{
+        max-width: 22em;
+        height: auto;
+    }
+    
+    .phoneLogo{
+        max-width: 10em;
+        height: auto;
+    }
+
+    @media all and (max-width: 49em){ /* Phone View */
+        #PC{display: none;}
+        .PhoneContent{display: none;}
+        .PhoneMenu{display: block;}
+        #newsPhone{border-top: 2px solid rgb(43, 43, 62); background-color: rgb(23, 23, 42);}
+        #newsPhoneCont{display: block;}
+        #whoPhone{border-bottom: 2px solid rgb(43, 43, 62); border-top: 2px solid rgb(43, 43, 62);}
+        body{background-repeat: repeat;}
+        .PCcontent{display: none;}
+    }
+
+    @media all and (min-width:40em){ /* PC View */
+        #PC{display: table;}
+        #menu #news{background-color: rgb(43, 43, 63); }
+        #Phone{display: none}
+        .PhoneContent{display: none;}
+        .PhoneMenu{display: none;}
+        #NEWS{display: inline;}
+    }
