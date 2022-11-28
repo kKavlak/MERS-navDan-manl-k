@@ -27,6 +27,7 @@
     
     span{font-weight: bold; text-decoration: underline;}
   
+
     .PCLogo{
         max-width: 22em;
         height: auto;
@@ -54,5 +55,5 @@
         #Phone{display: none}
         .PhoneContent{display: none;}
         .PhoneMenu{display: none;}
-        #NEWS{display: inline;}
+        #NEWS{display: block;}
     }
